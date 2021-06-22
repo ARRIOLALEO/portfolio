@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 from os import path
 from pathlib import Path
 from posixpath import join
-
+import os
 import rest_framework
 from rest_framework.fields import JSONField
 
@@ -139,3 +139,6 @@ REST_FRAMEWORK = {
         'rest_framework.renderers.JSONRenderer',
     )
 }
+
+MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+MEDIA_URL='/media/'
