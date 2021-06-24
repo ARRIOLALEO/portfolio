@@ -46,6 +46,8 @@ INSTALLED_APPS = [
     'skills',
     'rest_framework',
     'frontend',
+    'tinymce',
+    'blog',
 ]
 
 MIDDLEWARE = [
