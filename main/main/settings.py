@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     'skills',
     'rest_framework',
     'frontend',
-    'tinymce',
+    'django_summernote',
     'blog',
 ]
 
@@ -144,3 +144,4 @@ REST_FRAMEWORK = {
 
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 MEDIA_URL='/media/'
+X_FRAME_OPTIONS = 'SAMEORIGIN'  

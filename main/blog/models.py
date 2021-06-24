@@ -17,6 +17,7 @@ class Categories(models.Model):
 class Post(models.Model):
     title =models.CharField(max_length=500)
     image = models.FileField(upload_to=upload_to, validators=[validators.FileExtensionValidator(['svg'])])
+    description = models.TextField(null=True)
     day_creation =models.DateTimeField(auto_now_add=True)
     categorie = models.ManyToManyField(Categories)
 
