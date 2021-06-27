@@ -14,7 +14,7 @@ class App extends Component{
         <Hero />
         <Skill/>
         <Projects/>
-        <PostMain/>
+        <PostMain toShowPosts="2"/>
         <Footer/>
       </>
     )
