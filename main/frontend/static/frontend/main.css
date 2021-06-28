@@ -45,7 +45,7 @@ a, a:hover {
   
   box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
   border-radius: 10px;
-  margin: 0 0 2rem 0;
+  margin: 0 0 1rem 0;
   overflow: hidden;
   position: relative;
   color: #ffffff;
@@ -595,111 +595,9 @@ wrapper{margin:10vh}
   margin-bottom:0;
 }
 
-@import 'https://fonts.googleapis.com/css?family=Montserrat|Open+Sans';
-.navbar-brand {
-  font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase
+.py-3 {
+    background-color: white;
 }
-
-.navbar .nav {
-  font-family: 'Open Sans', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-size: 1.2rem
-}
-
-.navbar-inverse {
-  background-color: #003300
-}
-
-.navbar-inverse .navbar-nav>.active>a:hover,
-.navbar-inverse .navbar-nav>li>a:hover,
-.navbar-inverse .navbar-nav>li>a:focus {
-  background-color: #002200
-}
-
-.navbar-inverse .navbar-nav>.active>a,
-.navbar-inverse .navbar-nav>.open>a,
-.navbar-inverse .navbar-nav>.open>a,
-.navbar-inverse .navbar-nav>.open>a:hover,
-.navbar-inverse .navbar-nav>.open>a,
-.navbar-inverse .navbar-nav>.open>a:hover,
-.navbar-inverse .navbar-nav>.open>a:focus {
-  background-color: #003300
-}
-
-.dropdown-menu {
-  background-color: #006B00
-}
-
-.dropdown-menu>li>a:hover,
-.dropdown-menu>li>a:focus {
-  background-color: #002200
-}
-
-.navbar-inverse {
-  background-image: none;
-}
-
-.dropdown-menu>li>a:hover,
-.dropdown-menu>li>a:focus {
-  background-image: none;
-}
-
-.navbar-inverse {
-  border-color: #003300
-}
-
-.navbar-inverse .navbar-brand {
-  color: #FFFFFF
-}
-
-.navbar-inverse .navbar-brand:hover {
-  color: #FFCC00
-}
-
-.navbar-inverse .navbar-nav>li>a {
-  color: #FFFFFF
-}
-
-.navbar-inverse .navbar-nav>li>a:hover,
-.navbar-inverse .navbar-nav>li>a:focus {
-  color: #FFCC00
-}
-
-.navbar-inverse .navbar-nav>.active>a,
-.navbar-inverse .navbar-nav>.open>a,
-.navbar-inverse .navbar-nav>.open>a:hover,
-.navbar-inverse .navbar-nav>.open>a:focus {
-  color: #FFCC00
-}
-
-.navbar-inverse .navbar-nav>.active>a:hover,
-.navbar-inverse .navbar-nav>.active>a:focus {
-  color: #FFCC00
-}
-
-.dropdown-menu>li>a {
-  color: #FFFFFF
-}
-
-.dropdown-menu>li>a:hover,
-.dropdown-menu>li>a:focus {
-  color: #FFCC00
-}
-
-.navbar-inverse .navbar-nav>.dropdown>a .caret {
-  border-top-color: #FFFFFF
-}
-
-.navbar-inverse .navbar-nav>.dropdown>a:hover .caret {
-  border-top-color: #FFFFFF
-}
-
-.navbar-inverse .navbar-nav>.dropdown>a .caret {
-  border-bottom-color: #FFFFFF
-}
-
-.navbar-inverse .navbar-nav>.dropdown>a:hover .caret {
-  border-bottom-color: #FFFFFF
+.row{
+  margin-right:0 !important;
 }
