@@ -1,7 +1,13 @@
 from rest_framework import fields, serializers
-from .models import Project
+from .models import Project,Tools
+
+class ToolSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Tools
+        fields = ('model_name',)
 
 class ProjectSerializer(serializers.ModelSerializer):
+    tools = ToolSerializer(read_only=True, many=True)
     class Meta:
         model = Project
-        fields =('title','intro','article')
+        fields =('title','description','tools')
