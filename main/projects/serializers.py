@@ -10,4 +10,4 @@ class ProjectSerializer(serializers.ModelSerializer):
     tools = ToolSerializer(read_only=True, many=True)
     class Meta:
         model = Project
-        fields =('title','description','tools')
+        fields =('title','description','tools','project_link','github_link',)

@@ -11,4 +11,6 @@ class Project(models.Model):
     title = models.CharField(max_length=150)
     description = models.TextField(null=True)
     tools = models.ManyToManyField(Tools)
+    project_link = models.CharField(max_length=800,null=True)
+    github_link = models.CharField(max_length=800,null=True)
     create_Add = models.DateTimeField(auto_now_add=True)
