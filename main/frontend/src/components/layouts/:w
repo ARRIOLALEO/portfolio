@@ -13,13 +13,11 @@ function PostMain({toShowPosts}){
   },[])
     
   let cars = allPosts.map(card =>{
-    return <CardPost toShowPosts={card.title} />
+    return <CardPost toShowPosts="1" />
   })
   return(
         <>
-           <div class="row mr-0 mb-2">
           {cars}
-             </div>
         </>
     )
 }

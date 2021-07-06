@@ -9,7 +9,7 @@ function Index(){
       <Hero/>
       <Skills/>
       <Projects/>
-      <Postmain/>
+      <Postmain toShowPosts="2"/>
     </>
   )
 }

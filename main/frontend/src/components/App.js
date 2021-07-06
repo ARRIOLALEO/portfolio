@@ -4,6 +4,7 @@ import {BrowserRouter as Router ,Route ,Switch} from 'react-router-dom';
 import Index from './mainpage/index';
 import Menu from './layouts/menu';
 import Footer from './layouts/footer';
+import Post from './post/post';
 import Timeline from './timeline/timeline';
 class App extends Component{
   render(){
@@ -18,6 +19,7 @@ class App extends Component{
           <Route path="/timeline">
             <Timeline/>
           </Route>
+          <Route path="/post/:title" render={(props) =><Post/>}/>
           </Switch>
         <Footer/>
       </>
