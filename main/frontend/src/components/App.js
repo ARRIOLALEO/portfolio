@@ -19,7 +19,7 @@ class App extends Component{
           <Route path="/timeline">
             <Timeline/>
           </Route>
-          <Route path="/post/:title" render={(props) =><Post/>}/>
+          <Route path="/post/:title" render={(props) =><Post dataProps={props}/>}/>
           </Switch>
         <Footer/>
       </>

@@ -4,7 +4,7 @@ import CardPost from './postcard'
 function PostMain({toShowPosts}){
   const [allPosts,setPosts] = useState([])
   async function fetchMyApi(){
-    let response = await fetch('http://127.0.0.1:8000/api/post/')
+    let response = await fetch('/api/post/')
     response = await response.json()
     setPosts(response)
   }
@@ -13,7 +13,7 @@ function PostMain({toShowPosts}){
   },[])
     
   let cars = allPosts.map(card =>{
-    return <CardPost toShowPosts={card.title} />
+    return <CardPost postData={card} />
   })
   return(
         <>
