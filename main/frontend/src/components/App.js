@@ -1,6 +1,6 @@
 import React, {  Component } from 'react';
 import ReactDOM from 'react-dom';
-import {BrowserRouter as Router ,Route ,Switch} from 'react-router-dom';
+import {BrowserRouter as Router ,Route ,Switch } from 'react-router-dom';
 import Index from './mainpage/index';
 import Menu from './layouts/menu';
 import Footer from './layouts/footer';
@@ -10,7 +10,7 @@ class App extends Component{
   render(){
     return(
       <Router>
-      <>
+       <>
         <Menu/>
         <Switch>
           <Route exact  path="/">

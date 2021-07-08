@@ -1,13 +1,13 @@
-import React from 'react'
-import { useParams} from 'react-router-dom';
+import React ,{useEffect} from 'react'
+import { useParams , useHistory} from 'react-router-dom';
 function Post(props){
-  let {title} = useParams()
+  let  history = useHistory()
+  useEffect(()=>{
+  },[])
   let {description} = props.dataProps.location.state.postData
-  console.log(description)
-
   return(
     <>
-
+  
       <article className="mt-5">
 <div class="container">
               <div class="row">
@@ -15,7 +15,7 @@ function Post(props){
         <div class ="col-sm-10">
           <br />
           <br />
-          <h1><b>{title}</b></h1>
+          <h1><b></b></h1>
           <br/>
           <div dangerouslySetInnerHTML={{ __html: description }}>
           </div>
